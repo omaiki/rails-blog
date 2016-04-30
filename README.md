@@ -2,7 +2,7 @@
 
 Build a blog application using Rails and deploy it to Heroku.  There are many guides to building a Rails blog available online—some better than others.
 
-To submit your solution, add a link to your app to this README file under the sumbissions heading:
+To submit your solution, add a link to your app to this README file under the submissions heading:
 
 ```
 ### Submissions
