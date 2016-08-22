@@ -1,7 +1,7 @@
 class ArticlesController < ApplicationController
 
   #user authentication on every action except index and show
-  http_basic_authenticate_with name: "dhh", password: "secret", except: [:index, :show]
+  # http_basic_authenticate_with name: "dhh", password: "secret", except: [:index, :show]
 
   def index
     @articles = Article.all
@@ -23,7 +23,7 @@ class ArticlesController < ApplicationController
 
   #only authenticated users can delete comments
 
-  http_basic_authenticate_with name: "dhh", password: "secret", only: :destroy
+  # http_basic_authenticate_with name: "dhh", password: "secret", only: :destroy
 
   def create
     @article = Article.new(article_params)
