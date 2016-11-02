@@ -7,11 +7,9 @@ class ArticlesController < ApplicationController
     @articles = Article.all
   end
 
-
   def show
     @article = Article.find(params[:id])
   end
-
 
   def new
     @article = Article.new
@@ -56,3 +54,10 @@ class ArticlesController < ApplicationController
     params.require(:article).permit(:title, :text)
   end
 end
+
+# while self.class.exists?(access_token: access_token)
+#     self.access_token = User.new_token
+# end
+
+
+  # while the class exists, keep that assignment
